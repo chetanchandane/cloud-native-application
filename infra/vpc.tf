@@ -14,8 +14,6 @@ resource "aws_subnet" "public-subnet" {
     tags = {
         Name = "cloud-native-public-subnet"
     }
-
-  
 }
 
 resource "aws_subnet" "private-subnet" {
@@ -28,9 +26,6 @@ resource "aws_subnet" "private-subnet" {
 
 }
 
-resource "aws_internet_gateway" "cloud-native-igw" {
-    vpc_id = aws_vpc.cloud-native-vpc.id
-    tags = {
-        Name = "cloud-native-igw"
-    }
-}
+
+
+
